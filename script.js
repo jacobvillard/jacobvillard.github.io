@@ -21,7 +21,7 @@ document.getElementById('command').addEventListener('keydown', function(event) {
 				 <p>`;
                 break;
             case 'about'://about command, shows the about me
-                output.innerHTML += `<p class="blue-text">This is my portfolio website. I'm a passionate game designer. Click <a href="persona.pdf" target="_blank">here</a> to view more detail about me.</p>`;
+                output.innerHTML += `<p class="blue-text">This is my portfolio website. I'm a passionate game designer. Click <a href="Persona.pdf" target="_blank">here</a> to view more detail about me.</p>`;
                 break; 
             case 'hello':
             case 'hi':
@@ -94,7 +94,7 @@ document.getElementById('command').addEventListener('keydown', function(event) {
         		</p>`;
                 break;
             case 'cv'://cv command, shows the cv
-                output.innerHTML += `<p class="blue-text"> Click <a href="cv.pdf" target="_blank">here</a> to view my cirriculum vitae.</p>`;
+                output.innerHTML += `<p class="blue-text"> Click <a href="CV.pdf" target="_blank">here</a> to view my cirriculum vitae.</p>`;
                 break;
 			case 'pong'://Pong command, starts the pong game
 				output.innerHTML += `<p class="blue-text">Starting Reverse Pong...</p>`;
