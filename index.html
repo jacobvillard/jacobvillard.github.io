@@ -153,12 +153,211 @@
 
     <section id="career" class="content-section">
         <h3>Career</h3>
-        <p>I am currently in the final year of my <strong>Bachelor of Science (Honours) in Games Design and Production</strong> at the University of Salford. My studies have provided me with advanced technical knowledge and industry practices, as well as the ability to design immersive, player-centered experiences.</p>
 
-        <p>Prior to my university education, I completed a <strong>Level 4 Higher National Certificate (HNC) in Digital Technologies (Games and Animation)</strong> at Bury College, where I gained foundational skills in programming, animation, and game development. Additionally, I achieved a <strong>Level 3 National Extended Diploma in Computing</strong> with distinction, further strengthening my understanding of software development, project management, and computer science fundamentals.</p>
+        <!-- Career Tabs (Hidden by Default) -->
+        <div class="career-tabs">
+            <button onclick="filterCategory('All')" class="active">All</button>
+            <button onclick="filterCategory('Job')">Jobs</button>
+            <button onclick="filterCategory('Volunteering')">Volunteering</button>
+            <button onclick="filterCategory('Esports')">Esports</button>
+            <button onclick="filterCategory('Education')">Education</button>
+        </div>
 
-        <p>Beyond my technical education, I bring a strong sense of professionalism and efficiency from my time as a chef at Zumuku Sushi. Working in this fast-paced environment, I developed skills in time management, multitasking, and delivering customer-oriented service. This experience has shaped my ability to work collaboratively and effectively with diverse teams and developed me professionally as well.</p> 
+        <!-- Career Cards (Hidden by Default) -->
+        <div id="career-section" class="container">
+            <div class="career-card" data-category="Job">
+                <div class="career-header">
+                    <img src="ss.png" alt="Scopeium Studios" class="career-logo">
+                    <div>
+                        <h4>Scopeium Studios</h4>
+                        <p>Creative Director & Lead Programmer</p>
+                    </div>
+                </div>
+                <p class="career-duration">Sep 2024 - Present</p>
+            </div>
+
+            <div class="career-card" data-category="Job">
+                <div class="career-header">
+                    <img src="zumu.png" alt="Zumuku Sushi" class="career-logo">
+                    <div>
+                        <h4>Zumuku Sushi</h4>
+                        <p>KP, Chef</p>
+                    </div>
+                </div>
+                <p class="career-duration">Dec 2021 - 2024</p>
+            </div>
+            
+            
+            <div class="career-card" data-category="Education">
+                <div class="career-header">
+                    <img src="su.png" alt="University of Salford" class="career-logo">
+                    <div>
+                        <h4>University of Salford</h4>
+                        <p>BSc (Hons) Games Design & Production</p>
+                    </div>
+                </div>
+                <p class="career-duration">Sep 2023 - Present</p>
+            </div>
+
+            <div class="career-card" data-category="Education">
+                <div class="career-header">
+                    <img src="bc.png" alt="Bury College" class="career-logo">
+                    <div>
+                        <h4>Bury College</h4>
+                        <p>Level 4 Higher National Certificate in Digital Technologies (Games and Animation) – MERIT </p>
+                        
+                    </div>
+                </div>
+                <p class="career-duration">Sep 2022 - 2023</p>
+            </div>
+
+            <div class="career-card" data-category="Education">
+                <div class="career-header">
+                    <img src="bc.png" alt="Bury College" class="career-logo">
+                    <div>
+                        <h4>Bury College</h4>
+                        <p>Level 3 National Extended Diploma in Computing – D*D*D* </p>
+
+                    </div>
+                </div>
+                <p class="career-duration">Sep 2021 - 2022</p>
+            </div>
+
+            <div class="career-card" data-category="Education">
+                <div class="career-header">
+                    <img src="bc.png" alt="Bury College" class="career-logo">
+                    <div>
+                        <h4>Bury College</h4>
+                        <p> Level 3 National Foundation Diploma in Computing – D* </p>
+
+                    </div>
+                </div>
+                <p class="career-duration">Sep 2020 - 2021</p>
+            </div>
+
+            <div class="career-card" data-category="Education">
+                <div class="career-header">
+                    <img src="wh.png" alt="Woodhey High School" class="career-logo">
+                    <div>
+                        <h4>Woodhey High School</h4>
+                        <p> Creative iMedia(L2) – Distinction<br>
+                            Computer Science – 6<br>
+                            Combined Science – 7/7<br>
+                            English Language – 7<br>
+                            English Literature – 7<br>
+                            Mathematics - 8<br>
+                            History - 6<br>
+                            Religious Studies - 6<br>
+                            French - 7
+                        </p>
+
+                    </div>
+                </div>
+                <p class="career-duration">Sep 2014 - 2020</p>
+            </div>
+            
+
+            <div class="career-card" data-category="Volunteering">
+                <div class="career-header">
+                    <img src="ct.png" alt="Chaos Theory" class="career-logo">
+                    <div>
+                        <h4>Chaos Theory Secret Laboratory</h4>
+                        <p>Junior Moderator, Moderator</p>
+                    </div>
+                </div>
+                <p class="career-duration">Sep 2024 - Present</p>
+            </div>
+
+            <div class="career-card" data-category="Volunteering">
+                <div class="career-header">
+                    <img src="salfesports.png" alt="Salford Esports Society" class="career-logo">
+                    <div>
+                        <h4>Salford Esports Society</h4>
+                        <p>Valorant Game Rep</p>
+                    </div>
+                </div>
+                <p class="career-duration">Sep 2024 - Present</p>
+            </div>
+
+            <div class="career-card" data-category="Volunteering">
+                <div class="career-header">
+                    <img src="coop.png" alt="Coop Community" class="career-logo">
+                    <div>
+                        <h4>Coop Community Secret Laboratory</h4>
+                        <p>Discord and Game Moderator</p>
+                    </div>
+                </div>
+                <p class="career-duration">Aug 2020 - 2021</p>
+            </div>
+
+            <div class="career-card" data-category="Volunteering">
+                <div class="career-header">
+                    <img src="wh.png" alt="Woodhey High School" class="career-logo">
+                    <div>
+                        <h4>Woodhey High School</h4>
+                        <p>Ambassador, Prefect & Maths Tutor</p>
+                    </div>
+                </div>
+                <p class="career-duration">Sep 2017 - 2020</p>
+            </div>
+
+            <div class="career-card" data-category="Esports">
+                <div class="career-header">
+                    <img src="salfesports.png" alt="Salford Esports Society" class="career-logo">
+                    <div>
+                        <h4>Salford Cubs Marvel Rivals</h4>
+                        <p>Team Captain, IGL</p>
+                    </div>
+                </div>
+                <p class="career-duration">Mar 2025 - Present</p>
+            </div>
+
+            <div class="career-card" data-category="Esports">
+                <div class="career-header">
+                    <img src="vva.png" alt="Valkyrie Valor Esports" class="career-logo">
+                    <div>
+                        <h4>Valkyrie Valor Esports</h4>
+                        <p>Academy Valorant Player</p>
+                    </div>
+                </div>
+                <p class="career-duration">Jan 2025 - Mar 2025</p>
+            </div>
+
+            <div class="career-card" data-category="Esports">
+                <div class="career-header">
+                    <img src="salfesports.png" alt="Salford Esports Society" class="career-logo">
+                    <div>
+                        <h4>Salford Lions Valorant</h4>
+                        <p>Sub Player, Manager</p>
+                    </div>
+                </div>
+                <p class="career-duration">Sep 2024 - Jan 2025</p>
+            </div>
+
+            <div class="career-card" data-category="Esports">
+                <div class="career-header">
+                    <img src="salfesports.png" alt="Salford Esports Society" class="career-logo">
+                    <div>
+                        <h4>Salford Cubs Valorant</h4>
+                        <p>Player, Manager</p>
+                    </div>
+                </div>
+                <p class="career-duration">Sep 2024 - Jan 2025</p>
+            </div>
+
+            <div class="career-card" data-category="Esports">
+                <div class="career-header">
+                    <img src="nex.png" alt="Nexere Premier Team" class="career-logo">
+                    <div>
+                        <h4>Nexere Premier Team</h4>
+                        <p>IGL, Manager</p>
+                    </div>
+                </div>
+                <p class="career-duration">Apr 2024 - Jun 2024</p>
+            </div>
+        </div>
     </section>
+
 
 
     <section id="skills" class="content-section">

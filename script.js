@@ -117,8 +117,6 @@ document.getElementById('command').addEventListener('keydown', function(event) {
 window.onload = function() {
     const output = document.getElementById('cli-output');
     output.innerHTML += `<p class="purple-text">Welcome to My Portfolio! Type "help" for a list of available commands</p>`;
-	const projectsButton = document.querySelector('.section-buttons button:first-child');
-	setActiveSection(projectsButton, 'projects');
 };
 
 // Function to set the active section and display corresponding content
@@ -133,7 +131,42 @@ function setActiveSection(selectedButton, sectionId) {
 	sections.forEach(section => section.classList.remove('active'));
 
 	document.getElementById(sectionId).classList.add('active');
+
+	// Special handling for the Career section
+	if (sectionId === "career") {
+		document.querySelector(".career-tabs").style.display = "flex"; // Show career category buttons
+		document.querySelectorAll(".career-card").forEach(card => {
+			card.style.display = "block"; // Show all career cards
+		});
+	} else {
+		document.querySelector(".career-tabs").style.display = "none"; // Hide category buttons
+		document.querySelectorAll(".career-card").forEach(card => {
+			card.style.display = "none"; // Hide all career cards
+		});
+	}
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+	// Set "Projects" as the active section on load
+	const projectsButton = document.querySelector('.section-buttons button:nth-child(1)');
+	setActiveSection(projectsButton, 'projects');
 
+	// Function to filter career categories
+	window.filterCategory = function (category) {
+		const allCards = document.querySelectorAll(".career-card");
+		const buttons = document.querySelectorAll(".career-tabs button");
 
+		// Remove active class from all buttons and add to clicked one
+		buttons.forEach(btn => btn.classList.remove("active"));
+		event.target.classList.add("active");
+
+		// Show or hide cards based on category
+		allCards.forEach(card => {
+			if (category === "All" || card.dataset.category === category) {
+				card.style.display = "block";
+			} else {
+				card.style.display = "none";
+			}
+		});
+	};
+});
