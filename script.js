@@ -8,7 +8,7 @@ document.getElementById('command').addEventListener('keydown', function(event) {
 		//Switch statement to handle the commands
         switch (command) {
 			case 'help'://Help command, shows the available commands
-                output.innerHTML += `<p class="blue-text">Available commands: <br> 1. 'contact' - shows you my contact info. <br> 2. 'portfolio' - View more portfolio.<br> 3. 'about' - Learn more about me.<br> 4. 'cv' - Link to my cv. <br> 5. 'socials' - List of socials.<br> 6. 'fox' - Prints an image of an random fox. <br> 7. 'setbg' - Sets the background colour. <br> 8. 'speak' - CLI will speak your truth. <br> 9. 'open' - open a website. <br> 10. 'fact' - A random fact.<br> 11. 'joke' - A random programming joke. <br> 12. 'clear' - Clear the terminal.</p>`;
+                output.innerHTML += `<p class="blue-text">Available commands: <br> 1. 'contact' - shows you my contact info. <br> 2. 'portfolio' - View more portfolio.<br> 3. 'about' - Learn more about me.<br> 4. 'cv' - Link to my cv. <br> 5. 'socials' - List of socials.<br> 6. 'fox' - Prints an image of an random fox. <br> 7. 'setbg' - Sets the background colour. <br> 8. 'speak' - CLI will speak your truth. <br> 9. 'open' - open a website. <br> 10. 'fact' - A random fact.<br> 11. 'joke' - A random programming joke.<br> 12. 'old' - Load my original portfolio. <br> 13. 'clear' - Clear the terminal.</p>`;
                 break;
 			case 'contact'://Contact command, shows the contact info
                 output.innerHTML += `<p class="blue-text">You can contact me via the listed socials or send me an email directly at jacobvillard@gmail.com look forward to hearing from you!</p>`;
@@ -50,6 +50,9 @@ document.getElementById('command').addEventListener('keydown', function(event) {
         			output.innerHTML += `<p class="red-text">Please specify a color (e.g., 'setbg red').</p>`;
     			}
     			break;
+			case 'old'://Load the old portfolio
+				window.open("oldSite/index.html", "_blank");
+				break;
 		    case 'speak'://Speaks the message
     			const message = commandInput.substring(6); // Remove the 'speak ' part of the command
 	    		if (message) {
