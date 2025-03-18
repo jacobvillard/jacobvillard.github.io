@@ -50,6 +50,7 @@ document.getElementById('command').addEventListener('keydown', function(event) {
         			output.innerHTML += `<p class="red-text">Please specify a color (e.g., 'setbg red').</p>`;
     			}
     			break;
+				
 			case 'old'://Load the old portfolio
 				window.open("oldSite/index.html", "_blank");
 				break;
