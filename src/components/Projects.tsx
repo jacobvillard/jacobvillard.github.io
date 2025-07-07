@@ -144,7 +144,7 @@ const Projects = () => {
       demo: 'https://darknerior.itch.io/emuwar'
     },
     {
-      id: 12,
+      id: 27,
       title: 'RTS Battle Boxes',
       description: 'A prototype RTS game based upon rock paper scissors mechanics, showcasing my understanding of game design loops.',
       mediaType: "image",
